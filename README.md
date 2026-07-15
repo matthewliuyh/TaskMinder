@@ -118,5 +118,3 @@ npm run electron:build
 ## License
 
 MIT
-
-> AI生成
