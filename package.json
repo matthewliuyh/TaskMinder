@@ -1,0 +1,48 @@
+{
+  "name": "taskminder",
+  "version": "1.0.0",
+  "description": "桌面任务提醒助手",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite build && npx electron .",
+    "electron:dev": "vite build && electron .",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "sql.js": "^1.14.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "electron": "^41.7.1",
+    "electron-builder": "^24.13.3",
+    "vite": "^6.0.0"
+  },
+  "build": {
+    "appId": "com.taskminder.app",
+    "productName": "任务提醒助手",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/sql.js/dist/sql-wasm.wasm"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "sign": false,
+      "signingHashAlgorithms": []
+    },
+    "portable": {
+      "artifactName": "任务提醒助手-1.0.0-portable.exe"
+    }
+  }
+}
