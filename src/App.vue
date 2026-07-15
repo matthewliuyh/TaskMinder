@@ -19,6 +19,7 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 17v5M9 10l-3-3 2-2 3 3M15 10l3-3-2-2-3 3"/><rect x="6" y="10" width="12" height="4" rx="1"/></svg>
             </button>
           </div>
+          <span class="app-title">任务提醒助手</span>
           <div class="title-actions">
             <button class="icon-btn" @click="toggleDrawer" title="收起面板">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7M18 19l-7-7 7-7"/></svg>
@@ -728,8 +729,8 @@ function formatDateTime(dt) {
   flex-shrink: 0;
 }
 .app-title {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
   color: var(--text-primary);
   letter-spacing: 0.5px;
 }
