@@ -1,13 +1,3 @@
----
-AIGC:
-  ContentProducer: '001191110102MAD55U9H0F10002'
-  ContentPropagator: '001191110102MAD55U9H0F10002'
-  Label: '1'
-  ProduceID: '1f4410ce-d671-45de-9856-8472882daf95'
-  PropagateID: '1f4410ce-d671-45de-9856-8472882daf95'
-  ReservedCode1: '3324b0d2-cc3c-45db-926f-52ae7f94552f'
-  ReservedCode2: '3324b0d2-cc3c-45db-926f-52ae7f94552f'
----
 
 # TaskMinder - 桌面任务提醒助手
 
